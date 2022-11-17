@@ -1,0 +1,36 @@
+.the-final {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../assets/imgs/background-worldcup-2022.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    &__header {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        &-menu {
+            position: absolute;
+            top: 90px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            & p {
+                min-width: 11A0px;
+                color: aliceblue;
+                font-size: 18px;
+                line-height: 18px;
+                font-weight: 500;
+                padding: 0 16px;
+            }
+        }
+    }
+}
+
+.logo-worldcup-2022 {
+    & img {
+        height: 100px;
+        padding: 24px;
+    }
+}

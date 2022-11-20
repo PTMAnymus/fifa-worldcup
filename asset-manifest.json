@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/fifa-worldcup/static/css/main.e3da18a7.css",
+    "main.js": "/fifa-worldcup/static/js/main.e3dbf3fb.js",
+    "static/js/787.2d8bc800.chunk.js": "/fifa-worldcup/static/js/787.2d8bc800.chunk.js",
+    "static/media/mascot-worldcup-2022.png": "/fifa-worldcup/static/media/mascot-worldcup-2022.669ddd759a15429aa760.png",
+    "static/media/logo-worldcup-main-2022.webp": "/fifa-worldcup/static/media/logo-worldcup-main-2022.853a3841ca01c84391ef.webp",
+    "static/media/cristianoRonaldo.png": "/fifa-worldcup/static/media/cristianoRonaldo.06340499b339def02077.png",
+    "static/media/background-worldcup-2022.png": "/fifa-worldcup/static/media/background-worldcup-2022.e1d732f247e0ba381446.png",
+    "index.html": "/fifa-worldcup/index.html",
+    "main.e3da18a7.css.map": "/fifa-worldcup/static/css/main.e3da18a7.css.map",
+    "main.e3dbf3fb.js.map": "/fifa-worldcup/static/js/main.e3dbf3fb.js.map",
+    "787.2d8bc800.chunk.js.map": "/fifa-worldcup/static/js/787.2d8bc800.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3da18a7.css",
+    "static/js/main.e3dbf3fb.js"
+  ]
+}

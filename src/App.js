@@ -10,7 +10,7 @@ function App() {
           <Routes>
               <Route exact path="" element={ <Home/> } />
               <Route exact path="/final" element={<TheFinal />}/>
-              <Route exact path="*" element={<NotFound />} />
+              <Route exact path="*" element={<TheFinal />} />
           </Routes>
       </BrowserRouter>
     </>

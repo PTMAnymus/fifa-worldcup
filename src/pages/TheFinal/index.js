@@ -9,7 +9,7 @@ import GroupState from "./Component/GroupState"
 import Match from "./Component/Match";
 
 function TheFinal() {
-    const [isActiveMenu, setIsActiveMenu] = useState(2)
+    const [isActiveMenu, setIsActiveMenu] = useState(1)
     const handleActiveMenu = (value) => {
         setIsActiveMenu(value)
     }

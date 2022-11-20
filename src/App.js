@@ -7,10 +7,12 @@ function App() {
   return (
     <>
       <BrowserRouter>
-          <Routes>
-              <Route exact path="" element={ <Home/> } />
-              <Route exact path="/final" element={<TheFinal />}/>
+          <Routes >
+            <Route exact path="/" >
+              <Route exact index element={<Home />}/>
+              <Route exact path="final" element={<TheFinal />}/>
               <Route exact path="*" element={<NotFound />} />
+            </Route>
           </Routes>
       </BrowserRouter>
     </>

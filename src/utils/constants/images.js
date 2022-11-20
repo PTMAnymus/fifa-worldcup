@@ -1,7 +1,7 @@
 import WorldCupIcon from "../../assets/imgs/worldcup-icon.png";
 import BackgroundWorldcup2022 from "../../assets/imgs/background-worldcup-2022.png";
 import LogoWorldcupMain2022 from "../../assets/imgs/logo-worldcup-main-2022.webp";
-import MascotWorldcup2022 from "../../assets/imgs/mascot-worldcup-2022.webp"
+import MascotWorldcup2022 from "../../assets/imgs/mascot-worldcup-2022.png"
 
 //Team
 import QatarFlag from "../../assets/imgs/QatarFlag.png";
@@ -36,6 +36,7 @@ import PortugalFlag from "../../assets/imgs/PortugalFlag.png"
 import GhanaFlag from "../../assets/imgs/GhanaFlag.png"
 import UruguayFlag from "../../assets/imgs/UruguayFlag.png"
 import KoreaFlag from "../../assets/imgs/KoreaFlag.png"
+import CristianoRonaldo from "../../assets/imgs/cristianoRonaldo.png"
 
 export {
     WorldCupIcon,
@@ -76,4 +77,5 @@ export {
     GhanaFlag,
     UruguayFlag,
     KoreaFlag,
+    CristianoRonaldo,
 }

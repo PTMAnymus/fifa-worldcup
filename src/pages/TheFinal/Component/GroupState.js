@@ -210,7 +210,7 @@ const GroupState = () => {
         <div className="the-final__body__groupstate">
             {groupData.map((_group, _idx) => {
                 return (
-                        <Group Group={_group} />
+                        <Group Group={_group} key={_idx}/>
                 )
             })}
         </div>

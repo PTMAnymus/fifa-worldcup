@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 function Home() {
+    const navigate = useNavigate();
     return ( 
         <>
-            <span>Home</span>
+            <span onClick={() =>{navigate("final")} }>Home</span>
         </>
     );
 }

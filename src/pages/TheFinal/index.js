@@ -6,6 +6,7 @@ import {
 import { useState } from "react";
 import NotFound from "../NotFound";
 import GroupState from "./Component/GroupState"
+import Match from "./Component/Match";
 
 function TheFinal() {
     const [isActiveMenu, setIsActiveMenu] = useState(2)
@@ -46,7 +47,11 @@ function TheFinal() {
                     (isActiveMenu === 2 ?
                         <></>
                         :
+                        (isActiveMenu === 4?
+                        <Match/>
+                        :
                         <NotFound />
+                        )
                     )
                 }
             </div>
@@ -55,3 +60,5 @@ function TheFinal() {
 }
 
 export default TheFinal;
+
+

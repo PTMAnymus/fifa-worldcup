@@ -1,5 +1,4 @@
 function DateCompete(data) {
-    console.log(data)
     return ( 
         <div className="date-compete">
             <div className="date-compete__header">

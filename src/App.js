@@ -8,7 +8,7 @@ function App() {
     <>
       <BrowserRouter>
           <Routes >
-            <Route exact path="/fifa-worldcup/" >
+            <Route exact path="/" >
               <Route exact index element={<Home />}/>
               <Route exact path="final" element={<TheFinal />}/>
               <Route exact path="*" element={<NotFound />} />

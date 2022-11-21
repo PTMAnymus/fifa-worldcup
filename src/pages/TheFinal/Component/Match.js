@@ -1,37 +1,4 @@
-import {
-    QatarFlag,
-    EcuadorFlag,
-    SenegalFlag,
-    // NetherlandsFlag,
-    EnglandFlag,
-    IranFlag,
-    // USAFlag,
-    // WalesFlag,
-    // ArgentinaFlag,
-    // SaudiArabiaFlag,
-    // MexicoFlag,
-    PolandFlag,
-    // FrenchFlag,
-    // AustraliaFlag,
-    // DenmarkFlag,
-    // TunisiaFlag,
-    // SpainFlag,
-    // CostaRicaFlag,
-    // GermanyFlag,
-    // JapanFlag,
-    // BrasilFlag,
-    // SerbiaFlag,
-    // SwitzerlandFlag,
-    // CameroonFlag,
-    // BelgiumFlag,
-    // CanadarFlag,
-    // MarocFlag,
-    // CroatiaFlag,
-    // PortugalFlag,
-    // GhanaFlag,
-    // UruguayFlag,
-    // KoreaFlag,
-} from "../../../utils/constants/images.js"
+
 import DateCompete from "../../../Components/DateCompete.js";
 import { useEffect, useState } from "react";
 
@@ -48,6 +15,9 @@ function Match() {
     
             .then((response) => {
                 setDataMatch(response)
+            })
+            .catch((error)=> {
+                console.log(error)
             })
     }, [])
 

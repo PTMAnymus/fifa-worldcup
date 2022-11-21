@@ -4,7 +4,7 @@ const NotFound = () => {
     const navigate = useNavigate()
     return (
         <>
-            <p onClick={() => navigate("/fifa-worldcup")}>NotFound</p>
+            <p onClick={() => navigate("/")}>NotFound</p>
         </>
     )
 }

@@ -5,7 +5,8 @@ import {
 } from "../../utils/constants/images";
 import { useState } from "react";
 import NotFound from "../NotFound";
-import GroupState from "./Component/GroupState"
+import GroupState from "./Component/GroupState";
+import GroupRanks from "./Component/GroupRanks"
 import Match from "./Component/Match";
 
 function TheFinal() {
@@ -45,7 +46,7 @@ function TheFinal() {
                     <GroupState />
                     :
                     (isActiveMenu === 2 ?
-                        <></>
+                        <GroupRanks/>
                         :
                         (isActiveMenu === 4?
                         <Match/>

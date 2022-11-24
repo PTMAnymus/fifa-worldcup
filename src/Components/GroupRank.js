@@ -1,6 +1,8 @@
 
 
-const GroupRank = ({ data}) => {
+const GroupRank = ({ data }) => {
+    const date = new Date();
+    console.log(date.getDate())
     return (
         <div >
             <div className="group-rank__header">
@@ -25,7 +27,7 @@ const GroupRank = ({ data}) => {
                     <tbody className="group-rank__table-body">
                     {data.listTeam.map((_data, _idx) => {
                         return (
-                            <tr className="group-rank__table-body-row"  key={_idx}>
+                            <tr className={`group-rank__table-body-row ${_idx === 1 || _idx === 0 ? "pass-group":""}`}  key={_idx}>
                                 <td>{_idx + 1}</td>
                                 <td className="group-rank__table-left">
                                     <div>

@@ -1,0 +1,18 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("../../assets/imgs/background-worldcup-2022.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & img {
+        width: 200px;
+    }
+}

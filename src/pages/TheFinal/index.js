@@ -6,19 +6,25 @@ import {
 import { useState } from "react";
 import NotFound from "../NotFound";
 import GroupState from "./Component/GroupState";
-import GroupRanks from "./Component/GroupRanks"
+import GroupRanks from "./Component/GroupRanks";
+import KnockoutStage from "./Component/KnockoutStage";
 import Match from "./Component/Match";
+import { useNavigate } from "react-router-dom";
 
 function TheFinal() {
     const [isActiveMenu, setIsActiveMenu] = useState(1)
+    const navigate = useNavigate()
     const handleActiveMenu = (value) => {
         setIsActiveMenu(value)
+    }
+    const handleGoHome = () => {
+        navigate("/")
     }
     return (  
         <div className="the-final">
             <div className="the-final__header">
                 <div className="logo-worldcup-2022">
-                    <img src={LogoWorldcupMain2022} alt="Logo World Cup" />
+                    <img src={LogoWorldcupMain2022} alt="Logo World Cup" onClick={handleGoHome}/>
                 </div>
                 <div className="the-final__header-menu">
                     <div className={`${isActiveMenu===1?"active-menu":""}`} onClick={() => handleActiveMenu(1)}>
@@ -50,8 +56,12 @@ function TheFinal() {
                         :
                         (isActiveMenu === 4?
                         <Match/>
-                        :
-                        <NotFound />
+                            :
+                            (isActiveMenu === 3 ?
+                                <KnockoutStage/>
+                                :
+                            <NotFound />
+                            )
                         )
                     )
                 }

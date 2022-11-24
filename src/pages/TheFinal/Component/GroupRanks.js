@@ -76,7 +76,7 @@ const GroupRanks = () => {
             <div className="group-ranks__select">
                 {dataGroupIndex.map((_data, _idx) => {
                     return (
-                        <div key={_idx} onClick={() =>handleSelectGroup(_idx)}>
+                        <div key={_idx} onClick={() =>handleSelectGroup(_idx)} className={`group-ranks__select-group ${groupIndex===_data.idx?"select-group-active":""}`}>
                             <span>{_data.name}</span>
                         </div>
                     )
@@ -84,16 +84,16 @@ const GroupRanks = () => {
 
                 }
             </div>
-            <div>
+        <div>
                 
                 {dataGroupRank.map((_data, _index) => {
                     return (
-                        <div className={`group-rank ${_data.id === groupIndex ? "" : "display-none"}`}>
+                        <div className={`group-rank ${_data.id === groupIndex ? "" : "display-none"}`} key={_index}>
                             
-                            <div className="arrow-left" onClick={() => handleFindGroup("decre")}>
+                            <div className="arrow arrow-left" onClick={() => handleFindGroup("decre")}>
                                     <img src={ArrowLeft} alt="arrow"/>
                             </div>
-                            <div className="arrow-right" onClick={() => handleFindGroup("incre")}>
+                            <div className="arrow arrow-right" onClick={() => handleFindGroup("incre")}>
                                     <img src={ArrowRight} alt="arrow"/>
                             </div>
                             <GroupRank data={_data} key={_index}/>

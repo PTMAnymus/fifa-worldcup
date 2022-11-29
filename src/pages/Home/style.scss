@@ -6,13 +6,156 @@
     background-repeat: no-repeat;
 }
 
-.home-main {
+.home__main {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    & img {
+    position: relative;
+    &-cup {
+            position: relative;
+            z-index: 1;
+            width: 200px;
+            top: 160px;
+    
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    &-messi {
         width: 200px;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-ronaldo {
+        width: 250px;
+        position: absolute;
+        top: 80px;
+        left: calc(50% + 10px);
+    }
+    &-neymar {
+        width: 300px;
+        position: absolute;
+        top: 50px;
+        right: calc(50% + 10px);
+    }
+    &-valencia {
+        width: 250px;
+        position: absolute;
+        top: 210px;
+        right: calc(50% + 100px);
+    }
+    &-vandilk {
+        width: 250px;
+        position: absolute;
+        top: 300px;
+        right: calc(50% + 60px);
+    }
+    &-hassan {
+        width: 150px;
+        position: absolute;
+        top: 250px;
+        right: calc(50% + 50px);
+    }
+    &-koulibaly {
+        width: 250px;
+        position: absolute;
+        top: 200px;
+        left: calc(50% + 10px);
+    }
+    &-kane {
+        width: 150px;
+        position: absolute;
+        top: 280px;
+        left: calc(50% + 20px);
+    }
+    &-ehsan {
+        width: 550px;
+        position: absolute;
+        top: 220px;
+        right: calc(50% );
+    }
+    &-turner {
+        width: 300px;
+        position: absolute;
+        top: 360px;
+        right: calc(50% - 20px);
+    }
+    &-bale {
+        width: 250px;
+        position: absolute;
+        top: 150px;
+        right: calc(50% + 100px);
+    }
+    &-guardado {
+        width: 180px;
+        position: absolute;
+        top: 300px;
+        left: calc(50% + 90px);
+    }
+    &-lewans {
+        z-index: 2;
+        width: 350px;
+        position: absolute;
+        top: 550px;
+        left: calc(50% );
+        transform: translateX(-50%);
+    }
+    &-salman {
+        width: 180px;
+        position: absolute;
+        top: 400px;
+        left: calc(50% + 10px);
+    }
+    &-ryan {
+        width: 180px;
+        position: absolute;
+        top: 270px;
+        left: calc(50% + 170px);
+    }
+    &-simon {
+        width: 150px;
+        position: absolute;
+        top: 290px;
+        right: calc(50% + 210px);
+    }
+    &-mbape {
+        z-index: 2;
+        width: 300px;
+        position: absolute;
+        top: 520px;
+        right: calc(50% - 50px);
+    }
+    &-msakni {
+        width: 200px;
+        position: absolute;
+        top: 400px;
+        right: calc(50% + 200px);
+    }
+    &-bryan {
+        width: 200px;
+        position: absolute;
+        top: 450px;
+        right: calc(50% + 200px);
+    }
+    &-neuer {
+        width: 180px;
+        position: absolute;
+        top: 400px;
+        left: calc(50% + 100px);
+    }
+    &-minamino {
+        width: 300px;
+        position: absolute;
+        top: 400px;
+        left: calc(50% + 150px);
+    }
+    &-alba {
+        width: 280px;
+        position: absolute;
+        top: 400px;
+        right: calc(50% + 60px);
     }
 }
